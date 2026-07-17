@@ -35,7 +35,6 @@ import database as db
 import keyboards as kb
 from states import ClosePosition, MissedPosition, NewPosition
 
-load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 DB_PATH = os.getenv("DB_PATH", "journal.db")
 
