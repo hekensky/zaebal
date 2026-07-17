@@ -28,7 +28,7 @@ from aiogram.enums.parse_mode import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, FSInputFile, Message
-from aiogram.utils.markdown import escape_html
+from html import escape as escape_html
 from dotenv import load_dotenv
 
 import database as db
