@@ -69,7 +69,7 @@ def fmt_position(p: db.Position, with_result: bool = True) -> str:
 
 
 # ---------------------------------------------------------------- /start ---
-@router.message(CommandStart(), state="*")
+@router.message(CommandStart())
 async def cmd_start(message: Message, state: FSMContext) -> None:
     await state.clear()
     await message.answer(
